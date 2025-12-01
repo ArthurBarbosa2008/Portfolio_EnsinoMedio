@@ -445,13 +445,14 @@ body.dark .titulos-section {
     }
     @keyframes escrever {
         0% {
-            width: 0%;
+            width: 0;
         }
         70% {
-            width: 100%;
+            width: 100vh;
         }
         100% {
-            width: 100%;
+            width: 100vh;
         }
     }
+
 }
