@@ -381,10 +381,10 @@ body.dark .titulos-section {
         width: 0%;
     }
     70% {
-        width: 32.5%;
+        width: 100vh;
     }
     100% {
-        width: 32.5%;
+        width: 100vh;
     }
 }
 
@@ -416,6 +416,13 @@ body.dark .titulos-section {
 }
 
 @media screen and (max-width: 768px){
+    .homeIMG {
+        font-size: 20px;
+    }
+    .trilho {
+        left: 5px;
+        top: 60px;
+    }
     .atividade{
         width: 100%;
         flex-direction: column;
@@ -443,6 +450,15 @@ body.dark .titulos-section {
     .homeIMG {
         width: 35px;
     }
+    .título {
+        font-size: 20px;
+    }
+    .titulos-section{
+        font-size: 20px;
+    }
+    .msg {
+        font-size: 20px;
+    }
     @keyframes escrever {
         0% {
             width: 0;
@@ -454,5 +470,4 @@ body.dark .titulos-section {
             width: 100vh;
         }
     }
-
 }
