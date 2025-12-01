@@ -430,15 +430,15 @@ body.dark .titulos-section {
         width: 100%;
     }
     .matérias {
-        font-size: 11px;
-        margin-left: 15px;
+        font-size: 9px;
+        margin-left: 13px;
     }
     .matérias:hover {
-        font-size: 13px;
+        font-size: 11px;
     }
     .dropdown-menu {
-        margin-left: 15px;
-        font-size: 11px;
+        margin-left: 13px;
+        font-size: 9px;
     }
     .homeIMG {
         width: 35px;
