@@ -152,7 +152,7 @@ body.dark .dropdown-menu{
     color: rgb(238, 238, 238);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 17px;
-    margin-left: 5dvw;
+    margin-left: 3dvw;
     text-decoration: none;
     overflow: hidden;
     transition: 0.3s;
@@ -476,4 +476,5 @@ body.dark .titulos-section {
     }
 
 }
+
 
