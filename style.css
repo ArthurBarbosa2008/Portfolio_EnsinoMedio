@@ -7,7 +7,7 @@
 
 body {
     background-image: linear-gradient(180deg, rgb(255, 255, 255), rgb(215, 215, 215));
-    min-height: 100vh;
+    min-height: 100dvh;
     transition: 0.7s;
 }
 
@@ -30,7 +30,7 @@ body, button, a, .atividade{
 .dropdown-menu {
     cursor: none;
     position: absolute;
-    margin-left: 30px;
+    margin-left: 25px;
     overflow: hidden;
     background-color: rgb(128, 128, 128);
     border-radius: 5px;
@@ -152,7 +152,7 @@ body.dark .dropdown-menu{
     color: rgb(238, 238, 238);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 17px;
-    margin-left: 3dvw;
+    margin-left: 3vw;
     text-decoration: none;
     overflow: hidden;
     transition: 0.3s;
@@ -275,6 +275,10 @@ body.dark .título{
 body.dark .texto{
     background-color: rgb(223, 223, 223);
     box-shadow: 10px 10px 10px rgb(68, 68, 68)
+}
+
+.imgEU {
+    width: 50%;
 }
 
 .imagemH {
@@ -474,8 +478,4 @@ body.dark .titulos-section {
             width: 100vh;
         }
     }
-
 }
-
-
-
