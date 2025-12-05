@@ -52,23 +52,23 @@ body, button, a, .atividade{
     color: rgb(218, 218, 218);
 }
 
-.Linguagens:hover .dropdown-menu{
+.Linguagens:focus-within .dropdown-menu{
     display: block;
 }
 
-.Matemática:hover .dropdown-menu{
+.Matemática:focus-within .dropdown-menu {
     display: block;
 }
 
-.Humanas:hover .dropdown-menu{
+.Humanas:focus-within .dropdown-menu{
     display: block;
 }
 
-.Natureza:hover .dropdown-menu{
+.Natureza:focus-within .dropdown-menu{
     display: block;
 }
 
-.Senai:hover .dropdown-menu{
+.Senai:focus-within .dropdown-menu{
     display: block;
 }
 
@@ -159,7 +159,6 @@ body.dark .dropdown-menu{
 }
 
 .matérias:hover{
-    font-size: large;
     color: rgb(206, 206, 206);
 }
 
