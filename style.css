@@ -445,6 +445,9 @@ body.dark .titulos-section {
     .dropdown-menu {
         font-size: 9px;
     }
+    .home {
+        left: 1px;
+    }
     .homeIMG {
         width: 30px;
     }
