@@ -76,7 +76,7 @@ body, button, a, .atividade{
 .menu {
     z-index: 1000;
     position: fixed;
-    width: 100vw;
+    width: 100dvw;
     height: 55px;
     align-items: center;
     justify-content: center;
@@ -476,3 +476,4 @@ body.dark .titulos-section {
     }
 
 }
+
