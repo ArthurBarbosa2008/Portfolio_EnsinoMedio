@@ -30,7 +30,7 @@ body, button, a, .atividade{
 .dropdown-menu {
     cursor: none;
     position: absolute;
-    margin-left: 45px;
+    margin-left: 30px;
     overflow: hidden;
     background-color: rgb(128, 128, 128);
     border-radius: 5px;
@@ -476,5 +476,6 @@ body.dark .titulos-section {
     }
 
 }
+
 
 
