@@ -472,10 +472,11 @@ body.dark .titulos-section {
             width: 0;
         }
         70% {
-            width: 100vh;
+            width: 100vw;
         }
         100% {
-            width: 100vh;
+            width: 100vw;
         }
     }
+
 }
