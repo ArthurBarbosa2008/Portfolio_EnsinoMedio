@@ -439,7 +439,7 @@ body.dark .titulos-section {
         justify-items: left;
         left: 1px;
         top: 60px;
-        font-size: 9;
+        font-size: 6;
     }
     .atividade{
         width: 100%;
@@ -494,3 +494,4 @@ body.dark .titulos-section {
     }
 
 }
+
