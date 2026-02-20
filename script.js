@@ -1,6 +1,8 @@
 const cursor = document.querySelector('.cursor'); // transforma a classe cursor em uma constante no JS
 let trilho = document.getElementById('trilho'); // transforma o id trilho em constante no JS
 let body = document.querySelector('body');
+const mobile = document.querySelector(".mobile-menu");
+const nav = document.querySelector("nav");
 
 // Mouse personalizado
   // Seguir o mouse
@@ -10,9 +12,9 @@ let body = document.querySelector('body');
   });
 
   // Detectar hover sobre links e botões
-  const hoverTargets = document.querySelectorAll('a, button, .trilho'); // detecta os links e botões da minha página
+  const listaHover = document.querySelectorAll('a, button, .trilho'); // detecta os links e botões da minha página
 
-  hoverTargets.forEach(el => {
+  listaHover.forEach(el => {
     el.addEventListener('mouseenter', () => cursor.classList.add('hover')); // ativa o hover quando o mouse passa por cima
     el.addEventListener('mouseleave', () => cursor.classList.remove('hover')); // desativa quando o mouse sair
   });
@@ -23,3 +25,7 @@ let body = document.querySelector('body');
     body.classList.toggle('dark')
   })
 
+// Menu mobile
+  mobile.addEventListener("click", function (){
+    nav.classList.toggle("active")
+  })
