@@ -89,7 +89,6 @@ nav {
 
 .menu {
     z-index: 1000;
-    margin: 0 auto;
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -124,14 +123,14 @@ body.dark .dropdown-menu{
     background: transparent;
 }
 
-.active{
-    display: flex;
-}
-
 .linha {
     width: 100%;
     height: 2px;
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(238, 238, 238);
+}
+
+.mobile-menu:hover .linha{
+    background-color: rgb(204, 204, 204);
 }
 
 body.dark .linha{
@@ -152,7 +151,7 @@ body.dark .linha{
 }
 
 .botao-modos {
-    color: rgba(77, 77, 77);
+    color: rgb(238, 238, 238);
     font-size: 11px;
     transition: 0.7s;
 }
@@ -448,10 +447,19 @@ body.dark .titulos-section {
 
 @keyframes menu-surgir {
     0%{
-        translate: (-100%, 0);
+        right: -50vw;
     }
     100% {
-        translate: (0, 0);
+        right: 0;
+    }
+}
+
+@keyframes menu-sumir {
+    0%{
+        right: 0;
+    }
+    100% {
+        right: -50vw;
     }
 }
 
@@ -474,15 +482,17 @@ body.dark .titulos-section {
 }
 
 @media screen and (max-width: 768px){
+    body, button, a, .atividade{
+        cursor: auto;
+    }
     .cursor{
         display: none;
     }
     nav {
-        display: none;
         flex-direction: column;
         background-color: rgb(128, 128, 128);
         position: fixed;
-        right: 0;
+        right: -50dvw;
         top: 55px;
         width: 50dvw;
         height: 100dvh;
@@ -492,6 +502,20 @@ body.dark .titulos-section {
         white-space: nowrap;
         transition: 0.7s;
     } 
+
+    nav.active{
+        right: 0;
+        animation: menu-surgir 0.2s linear;
+    }
+
+    nav.off {
+        right: -50dvw;
+        animation: menu-sumir 0.2s linear;
+    }
+
+    nav a {
+        cursor: pointer;
+    }
     .dropdown-menu {
         cursor: none;
         position: relative;
@@ -509,6 +533,11 @@ body.dark .titulos-section {
 
     .mobile-menu{
         display: flex;
+        cursor: pointer;
+    }
+
+    .homeIMG{
+        cursor: pointer;
     }
     
     .botao-modos {
@@ -516,6 +545,7 @@ body.dark .titulos-section {
         left: 1px;
         top: 60px;
         font-size: 9;
+        cursor: pointer;
     }
     .atividade{
         width: 100%;

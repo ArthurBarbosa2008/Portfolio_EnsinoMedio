@@ -27,5 +27,5 @@ const nav = document.querySelector("nav");
 
 // Menu mobile
   mobile.addEventListener("click", function (){
-    nav.classList.toggle("active")
+    nav.classList.toggle('active')
   })
